@@ -10,7 +10,10 @@
       rel="stylesheet"
       href="style.css"
     />
-    <script src="calculator.js"></script>
+    <script
+      src="calculator.js"
+      defer
+    ></script>
     <title>Document</title>
   </head>
   <body>
@@ -18,16 +21,18 @@
       <h1>Chiaras Toller Taschenrechner</h1>
       <div id="container">
         <input
+          id="first_number"
           class="number_input"
           type="number"
         />
-        <select>
+        <select id="operation">
           <option>+</option>
           <option>-</option>
           <option>*</option>
           <option>/</option>
         </select>
         <input
+          id="second_number"
           class="number_input"
           type="number"
         />
@@ -36,49 +41,65 @@
       </div>
       <div id="numpad">
         <input
+          id="numpad_1"
           type="button"
           value="1"
         />
         <input
+          id="numpad_2"
           type="button"
           value="2"
         />
         <input
+          id="numpad_3"
           type="button"
           value="3"
         />
         <input
+          id="numpad_4"
           type="button"
           value="4"
         />
         <input
+          id="numpad_5"
           type="button"
           value="5"
         />
         <input
+          id="numpad_6"
           type="button"
           value="6"
         />
         <input
+          id="numpad_7"
           type="button"
           value="7"
         />
         <input
+          id="numpad_8"
           type="button"
           value="8"
         />
         <input
+          id="numpad_9"
           type="button"
           value="9"
         />
-        <div id="smiley">
+        <!-- <div id="smiley">
           <img src="assets/smiley.png" />
-        </div>
+        </div> -->
         <input
+          id="clear_button"
+          type="button"
+          value="Clear"
+        />
+        <input
+          id="numpad_0"
           type="button"
           value="0"
         />
         <input
+          id="calculate"
           type="button"
           value="="
         />
